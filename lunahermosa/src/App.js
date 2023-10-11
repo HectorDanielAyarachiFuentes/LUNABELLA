@@ -1,21 +1,28 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img src={logo} className="App-logo" alt="React Logo" />
+        <h1>Bienvenido a mi Aplicación React</h1>
+        <p>Contador: {count}</p> {/* Muestra el valor del contador */}
+        <button onClick={incrementCount}>Incrementar Contador</button> {/* Botón para incrementar el contador */}
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprende más sobre React
         </a>
       </header>
     </div>
