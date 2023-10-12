@@ -1,0 +1,167 @@
+/* Estilos globales */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #02073d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #02073d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #00e676;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00c163;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos para los componentes */
+  .App-logo {
+    width: 100px;
+    height: 100px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #02073d;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el contador */
+  .App-header {
+    background-color: #02073d;
+  }
+  
+  /* Estilos para los componentes específicos */
+  .futuristic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #02073d, #0a0f3e);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .futuristic-clock {
+    text-align: center;
+  }
+  
+  .futuristic-clock h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #00e676;
+  }
+  
+  .futuristic-clock-time {
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab-buttons button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s;
+    text-align: left;
+    margin: 5px 0;
+  }
+  
+  .tab-buttons button:hover {
+    background-color: #555;
+  }
+  
+  .tab-buttons button.starred:after {
+    content: "★";
+    margin-left: 5px;
+    color: yellow;
+    animation: star 0.5s ease-out;
+  }
+  
+  @keyframes star {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .tab-content {
+    padding: 20px;
+  }
+  
+  .tab-content h3 {
+    font-size: 24px;
+  }
+  

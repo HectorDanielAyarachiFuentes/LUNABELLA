@@ -16,8 +16,8 @@ function PrimerComponente() {
 
   return (
     <div>
-      <h2>Primer Componente</h2>
-      <p>Aquí puedes agregar contenido relacionado con la música.</p>
+      <h2>¡Gatitos en Concierto!</h2>
+      <p>¡Bienvenido al espectáculo musical de nuestros gatitos talentosos!</p>
 
       <audio id="audio-element" controls>
         <source src="https://www.cjoint.com/doc/23_10/MJltSwoIswd_y2mate.com---Delfin-Torres-gemelas-hard-remix-con-efectos-especiales.mp3" type="audio/mpeg" />
@@ -25,7 +25,7 @@ function PrimerComponente() {
       </audio>
 
       <button onClick={togglePlay}>
-        {isPlaying ? 'Pausar' : 'Reproducir'}
+        {isPlaying ? 'Detener la Serenata Gatuna' : 'Comenzar la Serenata Gatuna'}
       </button>
     </div>
   );

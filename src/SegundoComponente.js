@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 function SegundoComponente() {
   return (
     <div>
-      <h2>Segundo Componente</h2>
-      <p>Aquí puedes agregar cualquier contenido que desees.</p>
+      <h2>¡Gatos y Perros Amigos!</h2>
+      <p>¡Explora la amistad entre gatos y perros en estas adorables imágenes!</p>
 
       <Carousel showThumbs={false}>
         <div>
@@ -18,7 +18,7 @@ function SegundoComponente() {
         <div>
           <img src="https://scontent.fnqn4-1.fna.fbcdn.net/v/t39.30808-6/386070707_7001770556580972_6777058557418446007_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeEws83tYaLuAo-grc0i1SnkqN2JHzflGOeo3YkfN-UY5zHGoyaiaXIMX2EXikuzMH2qUYEXEQVwgJKVyeZBIShc&_nc_ohc=v6uuYJE0hAoAX8gsZ-t&_nc_ht=scontent.fnqn4-1.fna&oh=00_AfD3VByziCXjFRBtyKZyA-ERiCEzyCcq-qC87KPByhIiYg&oe=652B615B" alt="Imagen 3" />
         </div>
-        {/* Agrega más imágenes al carrusel según sea necesario */}
+        {/* Agrega más imágenes adorables de gatos y perros al carrusel según sea necesario */}
       </Carousel>
     </div>
   );

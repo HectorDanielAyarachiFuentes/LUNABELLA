@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles.css'; // Importa el archivo CSS global
 import PrimerComponente from './PrimerComponente';
 import SegundoComponente from './SegundoComponente';
-import TercerComponente from './TercerComponente'; // Importa el nuevo componente
+import TercerComponente from './TercerComponente';
+import Tabs from './Tabs';
+import FuturisticClock from './FuturisticClock';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,26 +16,23 @@ function App() {
 
   return (
     <div className="App">
-      <head>
-        {/* Aquí puedes agregar etiquetas meta, title y otros elementos del encabezado */}
-        <title>Mi Aplicación React</title>
-      </head>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="React Logo" />
-        <h1>Bienvenido a mi Aplicación React</h1>
-        <p>Contador: {count}</p>
-
-        <button onClick={incrementCount}>Incrementar Contador</button>
+        <h1>Bienvenido a la Aplicación Gatuna del Futuro</h1>
+        <p>Contador de Sonrisas: {count}</p>
+        <button onClick={incrementCount}>¡Sonríe al Futuro!</button>
       </header>
 
       <main>
-        {/* Contenido principal de tu aplicación */}
-        <PrimerComponente /> {/* Aquí se muestra el PrimerComponente */}
-        <SegundoComponente /> {/* Aquí se muestra el SegundoComponente */}
+        <section className="futuristic-section">
+          <FuturisticClock />
+        </section>
+        <Tabs />
+        <PrimerComponente />
+        <SegundoComponente />
       </main>
 
       <footer>
-        {/* Utiliza el nuevo componente para el footer moderno */}
         <TercerComponente />
       </footer>
     </div>
