@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.footer-moderno {
+  background-color: #007BFF; /* Color de fondo del footer */
+  color: #fff; /* Color del texto en el footer */
+  padding: 20px; /* Espaciado interior del footer */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-link {
+  color: #fff; /* Color del enlace */
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline; /* Subrayar el enlace al pasar el mouse sobre él */
+}
